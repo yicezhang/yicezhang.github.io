@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://github.com/favicon.ico">
+
+  <title>张义策的主页</title>
+  <meta name="keywords" content="张义策, Yice Zhang, Harbin Institute of Technology, NLP, Large Language Models">
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container content"> 
+  <main>
+  <div class="home">
+
+  <div class="mini-intro">
+  <img class="avatar" src="img/zhangyice.jpg" alt="zhangyice-photo">
+
+  <h2 style="font-size: 28px;padding-bottom: 20px;">张义策（Yice Zhang）</h2>
+  <p>华为诺亚实验室基础模型研究员 • 中国深圳</p>
+  <p>研究兴趣：大模型推理；指令遵循；数据合成</p>
+  <p><font color="#FF4500">有研究型实习岗位（base深圳，硕博生）。如感兴趣，欢迎联系我。</font></p>
+  <!-- Reasoning; Instruction Following; Knowledge Distillation; Data Synthesis; Sentiment Analysis -->
+  <p>E-mail: zhangyc_hit [at] 163.com</p>
+  <a href="https://scholar.google.com/citations?user=a4akjpYAAAAJ&hl">Google Scholar</a> |
+  <a href="https://huggingface.co/zhang-yice">Huggingface</a> |
+  <a href="https://github.com/1140310118">Github</a> |
+  <a href="https://www.zhihu.com/people/zhang-yi-ce-84"><span>知乎</span></a>
+
+</p>
+  <div id="menu">
+    <div>
+      <a href="#Biography">Biography</a>
+    </div>
+    <!-- <div>
+      <a href="#News">News</a>
+    </div> -->
+    <div>
+      <a href="#Publications">Publications</a>
+    </div>
+    <div>
+      <a href="#Awards">Competition Awards</a>
+    </div>
+    <script>
+      $(function () {
+        const current = window.location.pathname.split("/");
+        $('#menu div a').each(function(){
+          const $this = $(this);
+          if (current.indexOf($this.attr("href")) !== -1) {
+            $this.parent().addClass("now");
+          }
+        })
+      });
+    </script>
+  </div>
+
+  
+<h3><a name="Biography"></a>Biography</h3>
+
+张义策毕业于哈尔滨工业大学，目前是华为诺亚实验室的基础模型研究员，致力于华为盘古大模型的对齐工作。
+主要研究方向包括系统指令遵循、大模型推理、数据合成、知识蒸馏、情感分析等。
+
+<!-- 2025年3月毕业于哈尔滨工业大学（深圳），导师为徐睿峰教授。 -->
+<br>
+<br>
+<b>教育经历</b>
+<br>
+2014.09 - 2018.07 &nbsp; 哈尔滨工业大学计算机科学与技术学院 &nbsp; 学士
+<br>
+2018.09 - 2020.07 &nbsp; 哈尔滨工业大学计算机科学与技术学院 &nbsp; 硕士 &nbsp; 导师为<a href="https://homepage.hit.edu.cn/ycliu">刘远超副教授</a>
+<br>
+2020.09 - 2025.03 &nbsp; 哈尔滨工业大学（深圳）计算机科学与技术学院 &nbsp; 博士 &nbsp; 导师为<a href="https://faculty.hitsz.edu.cn/xuruifeng">徐睿峰教授</a>
+
+</p> 
+
+  
+<style>
+.paper-list li p {
+  margin: 0;
+  line-height: 1.4; /* 提升段内可读性 */
+  font-size: 18px;
+}
+
+.paper-list li p:nth-child(1) {
+  margin-bottom: 0.15em;
+}
+
+.paper-list li p:nth-child(2) {
+  margin-bottom: 0.15em;
+}
+
+.paper-list li p:nth-child(3) {
+  margin-bottom: 0.9em;
+}
+
+.annotation {
+  font-size: 0.8em;
+  color: #888;
+  margin-left: 0.2em;
+  font-weight: normal;
+}
+/* text-align: justify;font-size: 17.5px !important;line-height: 1.25 !important;margin: 0.5em !important;  */
+</style>
+
+  <h3 id="Publications">
+    Publications
+    <span class="annotation">[* denotes equal contribution]</span>
+  </h3>
+	<ul class="paper-list">
+
+  <li>
+    <p><i>Comprehensive and Efficient Distillation for Lightweight Sentiment Analysis Models.</i></p>
+    <p>Guangyu Xie*, <b>Yice Zhang*</b>, Jianzhu Bao, Qianlong Wang, Yang Sun, Bingbing Wang, Ruifeng Xu.</p>
+    <p>EMNLP, 2025. 
+      <!-- [<a href="">paper</a>] -->
+      [<a href="https://github.com/HITSZ-HLT/COMPEFFDIST">code</a>]
+      <!-- [<a>model-weight</a>] -->
+	  </p>
+  </li>
+
+  <li>
+    <p><i>Targeted Distillation for Sentiment Analysis.</i></p>
+    <p><b>Yice Zhang</b>, Guangyu Xie, Jingjie Lin, Jianzhu Bao, Qianlong Wang, Xi Zeng, Ruifeng Xu.</p>
+    <p>EMNLP, 2025. 
+      [<a href="https://arxiv.org/abs/2503.03225">paper</a>]
+      [<a href="https://github.com/HITSZ-HLT/Sentiment-Distillation">code</a>]
+      [<a href="https://huggingface.co/zhang-yice/llama-3-3B-sentiment-distillation-v1">model-weight</a>]
+	  </p>
+  </li>
+
+  <li>
+    <p><i>DS<sup>2</sup>-ABSA: Dual-Stream Data Synthesis with Label Refinement for Few-Shot Aspect-Based Sentiment Analysis.</i></p>
+    <p>Hongling Xu, <b>Yice Zhang</b>, Qianlong Wang, Ruifeng Xu.</p>
+    <p>ACL, 2025. 
+      [<a href="https://arxiv.org/abs/2412.14849">paper</a>]
+      [<a href="https://github.com/HITSZ-HLT/DS2-ABSA">code</a>]
+	  </p>
+  </li>
+
+  <li>
+    <p><i>A Hybrid Approach to Dimensional Aspect-Based Sentiment Analysis Using BERT and Large Language Models.</i></p>
+    <p><b>Yice Zhang</b>, Hongling Xu, Delong Zhang, Ruifeng Xu.</p>
+    <p>Electronics, 2024.
+      [<a href="https://www.mdpi.com/2079-9292/13/18/3724">paper</a>]
+    </p>
+  </li>
+  
+  <li>
+    <p><i>Distilling Fine-grained Sentiment Understanding from Large Language Models.</i></p>
+    <p><b>Yice Zhang</b>, Guangyu Xie, Hongling Xu, Kaiheng Hou, Jianzhu Bao, Qianlong Wang, Shiwei Chen, Ruifeng Xu.</p>
+    <p>arXiv:2412.18552. 
+      <a href="https://arxiv.org/abs/2412.18552">[paper]</a>
+      <a href="https://github.com/HITSZ-HLT/FSA-Distillation">[code]</a>
+      <a href="https://huggingface.co/zhang-yice/t5-sentiment-large">[model-weight]</a>
+	  </p>
+  </li>
+
+  <li>
+    <p><i>Self-Training with Pseudo-Label Scorer for Aspect Sentiment Quad Prediction.</i></p>
+    <p><b>Yice Zhang</b>, Jie Zeng, Weiming Hu, Ziyi Wang, Shiwei Chen, Ruifeng Xu.</p>
+    <p>ACL, 2024. 
+      [<a href="https://arxiv.org/abs/2406.18078">paper</a>]
+      [<a href="https://github.com/HITSZ-HLT/ST-w-Scorer-ABSA">code</a>]
+	  </p>
+  </li>
+
+  <li>
+    <p><i>Enhancing Generative Aspect-Based Sentiment Analysis with Relation-Level Supervision and Prompt.</i></p>
+    <p>Yifan Yang*, <b>Yice Zhang*</b>, Ruifeng Xu.</p>
+    <p>ICASSP, 2024. 
+      [<a href="https://ieeexplore.ieee.org/abstract/document/10448322">paper</a>]
+      [<a href="https://github.com/evanyfyang/RSM_RPM">code</a>]
+	  </p>
+  </li>
+
+  <li>
+    <p><i>Enhancing Multi-Label Classification via Dynamic Label-Order Learning.</i></p>
+    <p>Jiangnan Li*, <b>Yice Zhang*</b>, Shiwei Chen, Ruifeng Xu.</p>
+    <p>AAAI, 2024. 
+      [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/29814">paper</a>]
+      [<a href="https://github.com/KagamiBaka/DLOL">code</a>]
+	  </p>
+  </li>
+
+  <li>
+    <p><i>Target-to-Source Augmentation for Aspect Sentiment Triplet Extraction.</i></p>
+    <p><b>Yice Zhang</b>, Yifan Yang, Meng Li, Bin Liang, Shiwei Chen, Ruifeng Xu.</p>
+    <p>EMNLP, 2023. 
+      [<a href="https://aclanthology.org/2023.emnlp-main.747/">paper</a>]
+      [<a href="https://github.com/HITSZ-HLT/T2S-Augmentation">code</a>]
+	  </p>
+  </li>
+
+  <li>
+    <p><i>Set Learning for Generative Information Extraction.</i></p>
+    <p>Jiangnan Li, <b>Yice Zhang</b>, Bin Liang, Kam-Fai Wong, Ruifeng Xu.</p>
+    <p>EMNLP, 2023. 
+      [<a href="https://aclanthology.org/2023.emnlp-main.806/">paper</a>]
+      [<a href="https://github.com/KagamiBaka/Set-Learning">code</a>]
+	  </p>
+  </li>
+
+  <li>
+    <p><i>An Empirical Study of Sentiment-Enhanced Pre-Training for Aspect-Based Sentiment Analysis.</i></p>
+    <p><b>Yice Zhang</b>, Yifan Yang, Bin Liang, Shiwei Chen, Bing Qin, Ruifeng Xu.</p>
+    <p>ACL-Findings, 2023. 
+      [<a href="https://aclanthology.org/2023.findings-acl.612/">paper</a>]
+      [<a href="https://github.com/HITSZ-HLT/SPT-ABSA">code</a>]
+      [<a href="https://huggingface.co/zhang-yice/spt-absa-bert-400k">model-weight</a>]
+	  </p>
+  </li>
+
+  <li>
+    <p><i>Boundary-Driven Table-Filling for Aspect Sentiment Triplet Extraction.</i></p>
+    <p><b>Yice Zhang</b>, Yifan Yang, Yihui Li, Bin Liang, Shiwei Chen, Yixue Dang, Min Yang, Ruifeng Xu.</p>
+    <p>EMNLP, 2022. 
+      [<a href="https://aclanthology.org/2022.emnlp-main.435/">paper</a>]
+      [<a href="https://github.com/HITSZ-HLT/BDTF-ABSA">code</a>]
+	  </p>
+  </li>
+	</ul>
+
+  <h3 id="Awards">
+    Competition Awards
+    <span class="annotation">[* denotes equal contribution]</span>
+  </h3>
+	<ul class="paper-list">
+
+  <li>
+    <p>获「ACL SIGHAN 2024：中文维度方面级情感分析」第一名、最佳评测论文奖.</p>
+    <p>Hongling Xu*, Delong Zhang*, <b>Yice Zhang*</b>, Ruifeng Xu.</p>
+    <p>
+      <i><a href="https://aclanthology.org/2024.sighan-1.20/">
+        HITSZ-HLT at SIGHAN-2024 dimABSA Task: Integrating BERT and LLM for Chinese Dimensional Aspect-Based Sentiment Analysis.
+      </a></i>
+      <!-- [paper</a>] -->
+	  </p>
+    <img src="img/sighan.jpg" alt="acl-sighan-2024" width="50%">
+  </li>
+
+  <li>
+    <p>获「SemEval 2021 Task 5：毒性片段检测」第一名.</p>
+    <p>Qinglin Zhu*, Zijie Lin*, <b>Yice Zhang*</b>, Jingyi Sun, Xiang Li, Qihui Lin, Yixue Dang, Ruifeng Xu.</p>
+    <p>
+      <i><a href="https://aclanthology.org/2021.semeval-1.63/">
+        HITSZ-HLT at SemEval-2021 Task 5: Ensemble Sequence Labeling and Span Boundary Detection for Toxic Span Detection.
+      </a></i>
+	  </p>
+    <!-- <img src="img/sighan.jpg" alt="acl-sighan-2024" width="50%"> -->
+  </li>
+
+  <li>
+    <p>获「SemEval 2020 Task 12：毒性片段检测」第一名.</p>
+    <p><b>Yice Zhang</b>, Jiaxuan Lin, Yang Fan, Peng Jin, Yuanchao Liu, Bingquan Liu.</p>
+    <p>
+      <i><a href="https://aclanthology.org/2020.semeval-1.60/">
+        CN-HIT-IT.NLP at SemEval-2020 Task 4: Enhanced Language Representation with Multiple Knowledge Triples.
+      </a></i>
+	  </p>
+  </li>
+
+  </ul>
+
+</div>
+</body>
+
+</html>
