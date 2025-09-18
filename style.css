@@ -11,7 +11,8 @@ body {
 }
 
 html {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.5
 }
@@ -1259,5 +1260,6 @@ footer {
     margin-left: .25rem;
     padding: .25rem
 }
+
 
 /*# sourceMappingURL=styles.css.map */
